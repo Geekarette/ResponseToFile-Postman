@@ -16,7 +16,7 @@ shell.mkdir('-p', folderPath);
 app.use(bodyParser.json({limit: '50mb', extended: true}));
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true })); 
 
-app.get('/', (req, res) => res.send('Hello, I write data to file. Send them requests!'));
+app.get('/', (req, res) => res.send('Hello Geekarette, I write data to file. Send them requests!'));
 
 app.post('/write', (req, res) => {
   let extension = req.body.fileExtension || defaultFileExtension,
